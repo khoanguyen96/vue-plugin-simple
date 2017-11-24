@@ -1,12 +1,10 @@
 var exec = require('child_process').execSync;
-
 var name, email;
 
 try {
   name = exec('git config --get user.name');
   email = exec('git config --get user.email');
-} catch (e) {
-}
+} catch (e) {}
 
 name = name && name.toString().trim();
 email = email && email.toString().trim();

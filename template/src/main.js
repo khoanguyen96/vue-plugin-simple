@@ -1,5 +1,14 @@
-import Hello from './components/Hello.vue';
+import HelloWorld from './components/HelloWorld.vue';
 
-export default {
-  Hello
+const components = {
+  HelloWorld,
 };
+
+Object.keys(components).forEach((name) => {
+  // in browsers ~
+  if (typeof window !== 'undefined' && window.Vue) {
+    window.Vue.component(name, components[name]);
+  }
+});
+
+export default HelloWorld;
