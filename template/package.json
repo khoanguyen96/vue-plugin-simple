@@ -50,6 +50,7 @@
     "rollup-plugin-uglify": "^2.0.1",
     "rollup-plugin-vue": "^2.5.2",
     "vue-server-renderer": "^2.5.8",
+    "vue-template-compiler": "^2.5.8",
     "vue-test-utils": "^1.0.0-beta.6"
   },
   "engines": {
@@ -62,7 +63,6 @@
     "not ie <= 8"
   ],
   "jest": {
-    "setupTestFrameworkScriptFile": "./test/setup.js",
     "moduleFileExtensions": [
       "js",
       "vue"
